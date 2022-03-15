@@ -34,9 +34,6 @@ $mime_type="application/force-download";
 
 
 
-ini_set('zlib.output_compression', 'Off');
-header('Content-Type: ' . $mime_type);
-header('Content-Disposition: attachment; filename="'.$name.'"');
 header("Content-Transfer-Encoding: binary");
 header('Accept-Ranges: bytes');
 header("Cache-control: private");
