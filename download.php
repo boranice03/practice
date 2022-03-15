@@ -33,7 +33,7 @@ $mime_type="application/force-download";
 @ob_end_clean();
 
 
-if(ini_get('zlib.output_compression'))
+
 ini_set('zlib.output_compression', 'Off');
 header('Content-Type: ' . $mime_type);
 header('Content-Disposition: attachment; filename="'.$name.'"');
